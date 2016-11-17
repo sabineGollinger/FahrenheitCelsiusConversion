@@ -64,7 +64,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="60dp">
 
             <Button
@@ -83,31 +83,48 @@
                 android:layout_weight="1"
                 android:onClick="calcF" />
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:text="Result:"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textResult"
+                android:layout_weight="2"
+                tools:textSize="30sp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewResult"
+                android:layout_weight="1"
+                tools:text="test"
+                android:gravity="center_vertical|center_horizontal"
+                tools:textSize="18sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:text="show About"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonShowAbout"
+                android:layout_weight="1"
+                android:onClick="showAbout" />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp">
-
-        <TextView
-            android:text="Result:"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textResult"
-            android:layout_weight="2"
-            tools:textSize="30sp"
-            android:gravity="center_vertical" />
-
-        <TextView
-            android:text="TextView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewResult"
-            android:layout_weight="1"
-            tools:text="test"
-            android:gravity="center_vertical|center_horizontal"
-            tools:textSize="18sp" />
-    </LinearLayout>
 </RelativeLayout>
